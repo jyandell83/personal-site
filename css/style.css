@@ -1,9 +1,11 @@
 body  {
     color: #4C4C4C;
     background-color: #DFDBD3;
+    font-family: 'Oswald', sans-serif;
 }
 
 nav ul {
+    font-family: 'Lato', sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
