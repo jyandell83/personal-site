@@ -1,5 +1,5 @@
 body  {
-    color: #03A6A6;
+    color: #8C2804;
     background-color: #F2D6BD;
 }
 
@@ -14,16 +14,18 @@ nav ul {
 li {
     float: left;
 }
-  
+
+.social {
+    float: right;
+}
 li a {
     display: block;
-    color: #8C2804;
+    color: #03A6A6;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
   
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
+li a:hover {
     background-color: #F26513
 }
