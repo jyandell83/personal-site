@@ -1,6 +1,6 @@
 body  {
-    color: #8C2804;
-    background-color: #F2D6BD;
+    color: #4C4C4C;
+    background-color: #DFDBD3;
 }
 
 nav ul {
@@ -8,7 +8,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ACD1F2;
+    background-color: #4C4C4C;
 }
   
 li {
@@ -20,12 +20,12 @@ li {
 }
 li a {
     display: block;
-    color: #03A6A6;
+    color: #FFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
   
 li a:hover {
-    background-color: #F26513
+    background-color: #B2CF42;
 }
