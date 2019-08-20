@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Tinos&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,30 +13,36 @@
     <div class="wrapper">
         <header>
             <h1>Jeremy Yandell</h1>
+            <h2>Full Stack Web Developer</h2>
         </header>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-                <span class="social">
-                    <li><a href="https://github.com/jyandell83"><i class="fab fa-github-alt"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/jeremy-yandell/"><i class="fab fa-linkedin"></i></a></li>
-                </span>
-            </ul>
+            <div id="navcont">
+                
+                    <ul>
+                        <li><a v-on:click="counter = 'home'">Home</a></li>
+                        <li><a v-on:click="counter = 'resume'">Resume</a></li>
+                        <li><a v-on:click="counter = 'project'">Projects</a></li>
+                        <li><a v-on:click="counter = 'contact'">Contact</a></li>
+                        <span class="social">
+                            <li><a href="https://github.com/jyandell83"><i class="fab fa-github-alt"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/jeremy-yandell/"><i class="fab fa-linkedin"></i></a></li>
+                        </span>
+                    </ul>
+                
+            </div>
         </nav>
-        <div class="content"> 
-            <h2>Under Construction...</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse id, impedit exercitationem, voluptate reprehenderit provident reiciendis, sed et illo dolore culpa voluptatem voluptates? Reprehenderit vel dolorem, eligendi necessitatibus eius totam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nihil quis quaerat placeat sint blanditiis quas aut amet magnam. Ducimus quibusdam ea recusandae facere earum facilis perferendis architecto aut neque veniam vel laboriosam, quo non ipsam nemo nisi. Facilis voluptate quae debitis nemo itaque voluptas, quasi assumenda rem iure magnam dolorem, error aliquam nisi eaque deleniti. Pariatur maiores, quis numquam consequuntur libero iure atque. Suscipit facere cupiditate, quisquam dolor libero eum natus minus voluptatibus voluptas sequi doloremque eligendi vel quidem?
+        <div > 
+          
         </div>
-        <div class="content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui adipisci aliquam, magni explicabo, debitis cumque repellendus modi temporibus illo similique id excepturi consectetur! Deleniti voluptatum nostrum fugiat. Veniam, eligendi? Dolorum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste omnis, velit fugit repellat laudantium provident? Molestiae facilis a facere temporibus, animi odit vero reiciendis quo quisquam voluptates consequuntur debitis est dolorem? Rem assumenda sit, iusto ipsa vitae labore ad consequuntur aut ex omnis eaque eveniet sint quos? Suscipit quos nostrum possimus magni sapiente aliquid itaque alias officia, nulla laboriosam sed commodi, doloribus quibusdam ipsum ratione. Veniam est numquam porro eius, aliquid quisquam magnam ab veritatis, quibusdam, eaque ad repellendus aut?
-
-        </div>
-        <div class="content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias itaque excepturi architecto, quo ipsum quidem, at eius nulla recusandae, perferendis numquam nemo! Eveniet, praesentium illum molestiae dolore quis corporis nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laudantium exercitationem corrupti nemo fugit sit, voluptate dolor, nihil excepturi in doloribus, distinctio ratione! Deserunt laudantium consequatur ab id corrupti eveniet, veniam beatae itaque culpa quas quibusdam ipsa ea ipsam sit similique quidem numquam doloribus nulla temporibus placeat molestiae. Harum, iure sed quidem eligendi in vitae voluptatem dolores suscipit, dolore ratione consectetur, iusto deserunt ad sequi. Minus inventore, voluptatum accusantium odit et nesciunt eaque, esse recusandae libero perspiciatis consequuntur dicta assumenda!
+        <div id="cont"> 
+                <div v-if="counter === 'home'">Home</div>
+                <div v-if="counter === 'resume'">Resume</div>
+                <div v-if="counter === 'project'">Projects</div>
+                <div v-if="counter === 'contact'">Contact</div>
+            </div>
+        <div >
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laudantium vitae saepe placeat rem perspiciatis! Harum doloribus molestiae minima sit esse, quae architecto illum doloremque. Iure vitae repudiandae, veniam ipsa magnam neque cupiditate rem deleniti. Harum nihil a aliquam iusto ut inventore totam blanditiis assumenda corrupti ducimus minima dolorem, beatae pariatur rem ex nemo aspernatur, optio aliquid maxime laboriosam excepturi ratione vel molestiae. Suscipit repudiandae eos unde excepturi asperiores odit, autem laboriosam labore possimus iste quae! Doloribus, ipsa? Eos, veniam!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque quae cupiditate consectetur aut assumenda deserunt nemo adipisci beatae eaque illum dignissimos dolore laudantium sunt quos harum ea, odit eos voluptate maiores iusto repellendus ad. Fugit qui aliquid commodi facilis laborum iure repudiandae nostrum quaerat cupiditate totam at minus rem blanditiis voluptate eaque exercitationem perferendis veniam magni, deleniti culpa facere consequatur! Possimus incidunt porro, magnam asperiores eos odit odio placeat consequuntur? Illum porro quidem officia nesciunt obcaecati voluptas, voluptatem in.
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>

@@ -1,11 +1,14 @@
-$fontcolor : #CCCCCC;
-$link-color: #501F3A;   
-$link-hover : #CB2D6F;
+$headercolor : rgba(242,109,109,1);
+$link-color: rgba(37,107,115,1); 
+$link-hover : rgba(242,81,141,1);
+$nav-background: rgba(242,109,109,1);
+$body-background: rgba(47,131,140,1);
+
 
 body  {
-    color: $fontcolor;
-    background-color: #0F292F;
-    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    background-color: $body-background;
+    font-family: 'Tinos', serif;
     margin: 0 auto;
 }
 
@@ -16,6 +19,16 @@ body  {
 }
 header {
     grid-column: 1 / 5;
+    padding-left: 15px;
+    background-image: url("../public/Koi.jpg");
+    height: 700px;
+    text-align: center;
+}
+h1 {
+    color: $headercolor;
+    font-size: 50px;
+    margin-top: 400px;
+    font-family: 'Lobster', cursive;
 }
 nav {
     grid-column: 1 / 5;
@@ -26,12 +39,15 @@ nav {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #14A098;
+        background-color: $nav-background;
     }
     li {
         float: left;
         padding: 14px 16px;
         text-align: center;
+        &:hover{
+            background-color: $link-color;
+        }
     }
 }
 .fixed-nav{
@@ -45,10 +61,11 @@ a {
     color: $link-color;
     text-decoration: none;
     border-bottom:1px solid $link-color; 
-    transition:border-color 0.2s, color 0.2s ease-in-out;
+    // transition:border-color 0.2s, color 0.2s ease-in-out;
     &:hover{
         border-color:$link-hover;
         color: $link-hover;
+        background-color: $link-color;
     }
 }
   
