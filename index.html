@@ -10,7 +10,7 @@
     <title>Jeremy Yandell</title>
 </head>
 <body>
-    <div class="wrapper">
+    
         <header>
             <h1>Jeremy Yandell</h1>
             <h2>Full Stack Web Developer</h2>
@@ -19,31 +19,28 @@
             <div id="navcont">
                 
                     <ul>
-                        <li><a v-on:click="counter = 'home'">Home</a></li>
-                        <li><a v-on:click="counter = 'resume'">Resume</a></li>
-                        <li><a v-on:click="counter = 'project'">Projects</a></li>
-                        <li><a v-on:click="counter = 'contact'">Contact</a></li>
+                        <a v-on:click="counter = 'home'"><li>Home</li></a>
+                        <a v-on:click="counter = 'resume'"><li>Resume</li></a>
+                        <a v-on:click="counter = 'project'"><li>Projects</li></a>
+                        <a v-on:click="counter = 'contact'"><li>Contact</li></a>
                         <span class="social">
-                            <li><a href="https://github.com/jyandell83"><i class="fab fa-github-alt"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/jeremy-yandell/"><i class="fab fa-linkedin"></i></a></li>
+                            <a href="https://github.com/jyandell83"><li><i class="fab fa-github-alt"></i></li></a>
+                            <a href="https://www.linkedin.com/in/jeremy-yandell/"><li><i class="fab fa-linkedin"></i></li></a>
                         </span>
                     </ul>
                 
             </div>
         </nav>
-        <div > 
-          
-        </div>
-        <div id="cont"> 
-                <div v-if="counter === 'home'">Home</div>
-                <div v-if="counter === 'resume'">Resume</div>
-                <div v-if="counter === 'project'">Projects</div>
-                <div v-if="counter === 'contact'">Contact</div>
+            <div id="cont"> 
+                    <h2 v-if="counter === 'home'">Home</h2>
+                    <h2 v-if="counter === 'resume'">Resume</h2>
+                    <h2 v-if="counter === 'project'">Projects</h2>
+                    <h2 v-if="counter === 'contact'">Contact</h2>
             </div>
-        <div >
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laudantium vitae saepe placeat rem perspiciatis! Harum doloribus molestiae minima sit esse, quae architecto illum doloremque. Iure vitae repudiandae, veniam ipsa magnam neque cupiditate rem deleniti. Harum nihil a aliquam iusto ut inventore totam blanditiis assumenda corrupti ducimus minima dolorem, beatae pariatur rem ex nemo aspernatur, optio aliquid maxime laboriosam excepturi ratione vel molestiae. Suscipit repudiandae eos unde excepturi asperiores odit, autem laboriosam labore possimus iste quae! Doloribus, ipsa? Eos, veniam!
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque quae cupiditate consectetur aut assumenda deserunt nemo adipisci beatae eaque illum dignissimos dolore laudantium sunt quos harum ea, odit eos voluptate maiores iusto repellendus ad. Fugit qui aliquid commodi facilis laborum iure repudiandae nostrum quaerat cupiditate totam at minus rem blanditiis voluptate eaque exercitationem perferendis veniam magni, deleniti culpa facere consequatur! Possimus incidunt porro, magnam asperiores eos odit odio placeat consequuntur? Illum porro quidem officia nesciunt obcaecati voluptas, voluptatem in.
-        </div>
+            <div >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laudantium vitae saepe placeat rem perspiciatis! Harum doloribus molestiae minima sit esse, quae architecto illum doloremque. Iure vitae repudiandae, veniam ipsa magnam neque cupiditate rem deleniti. Harum nihil a aliquam iusto ut inventore totam blanditiis assumenda corrupti ducimus minima dolorem, beatae pariatur rem ex nemo aspernatur, optio aliquid maxime laboriosam excepturi ratione vel molestiae. Suscipit repudiandae eos unde excepturi asperiores odit, autem laboriosam labore possimus iste quae! Doloribus, ipsa? Eos, veniam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque quae cupiditate consectetur aut assumenda deserunt nemo adipisci beatae eaque illum dignissimos dolore laudantium sunt quos harum ea, odit eos voluptate maiores iusto repellendus ad. Fugit qui aliquid commodi facilis laborum iure repudiandae nostrum quaerat cupiditate totam at minus rem blanditiis voluptate eaque exercitationem perferendis veniam magni, deleniti culpa facere consequatur! Possimus incidunt porro, magnam asperiores eos odit odio placeat consequuntur? Illum porro quidem officia nesciunt obcaecati voluptas, voluptatem in.
+            </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="./app.js"></script>

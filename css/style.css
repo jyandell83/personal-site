@@ -5,18 +5,7 @@ body {
   margin: 0 auto;
 }
 
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 6fr 1fr;
-      grid-template-columns: 1fr 6fr 1fr;
-  grid-auto-rows: minmax(10px, auto);
-}
-
 header {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
   padding-left: 15px;
   background-image: url("../public/Koi.jpg");
   height: 700px;
@@ -26,14 +15,12 @@ header {
 h1 {
   color: #f26d6d;
   font-size: 50px;
-  margin-top: 400px;
   font-family: 'Lobster', cursive;
+  padding-top: 400px;
+  margin: 0 auto;
 }
 
 nav {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
   width: 100%;
 }
 
@@ -60,20 +47,17 @@ nav li:hover {
   position: fixed;
   top: 0;
   z-index: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
+  width: 100%;
 }
 
 a {
   display: block;
   color: #256b73;
+  cursor: pointer;
   text-decoration: none;
-  border-bottom: 1px solid #256b73;
 }
 
 a:hover {
-  border-color: #f2518d;
   color: #f2518d;
   background-color: #256b73;
 }
@@ -84,6 +68,7 @@ a:hover {
 
 .social a {
   border: none;
+  display: inline;
 }
 
 .content {
