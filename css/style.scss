@@ -1,27 +1,54 @@
-$headercolor : rgba(242,109,109,1);
-$link-color: rgba(37,107,115,1); 
-$link-hover : rgba(242,81,141,1);
-$nav-background: rgba(242,109,109,1);
+$headercolor : navajowhite;
+$link-color: mintcream; 
+$link-hover : rgba(240,80,140,1);
+$nav-background: rgba(0,0,0,1);
 $body-background: rgba(47,131,140,1);
 
 
 body  {
-    color: #FFFFFF;
+    color: ghostwhite;
     background-color: $body-background;
     font-family: 'Tinos', serif;
     margin: 0 auto;
 }
 header {
     padding-left: 15px;
-    background-image: url("../public/Koi.jpg");
-    height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../public/waves.jpg");
     text-align: center;
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    button {
+        background-color: transparent;
+        border: 2px solid navajowhite;
+        color: mintcream;
+        border-radius: 0.6em;
+        cursor: pointer;
+        display: flex;
+        align-self: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 20px;
+        padding: 1.2em 2.8em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        &:hover {
+            color: $link-hover;
+            background-color: navajowhite;
+            outline: 0;
+            transition: 0.2s ease-in-out;
+         }
+    }
 }
+
 h1 {
     color: $headercolor;
     font-size: 50px;
     font-family: 'Lobster', cursive;
-    padding-top: 400px;
     margin: 0 auto;
 }
 nav {
@@ -49,6 +76,9 @@ nav {
     z-index: 1;
     width: 100%;
 }
+.fixed-nav + div {
+    padding-top: 46px;
+}
 a {
     display: block;
     color: $link-color;
@@ -75,3 +105,6 @@ a {
     padding: 10px;
 }
 
+#mepic {
+    width: 35%;
+}
