@@ -1,6 +1,8 @@
 
 //These are variables
 const nav = document.querySelector('nav');
+const learnMoreButton = document.querySelector('#learn-more-btn');
+const content = document.querySelector('#mepic');
 const navTop = nav.offsetTop;
 
 let sourceoftruth = {
@@ -26,5 +28,11 @@ const stickNav = () => {
       }
 }
 
+const scrollClick = ()  =>  {
+  console.log('hi')
+  content.scrollIntoView({behavior: 'smooth'});
+}
+
 //Listen for scroll, glue nav down
 window.addEventListener('scroll', stickNav);
+learnMoreButton.addEventListener('click', scrollClick);
