@@ -22,6 +22,7 @@ const navcont = new Vue({
 // This makes the nav bar sticky when scrolling down
 const stickNav = () => {
     if (window.scrollY >= navTop) {
+        console.log(navTop)
         nav.classList.add('fixed-nav');
       } else {
         nav.classList.remove('fixed-nav');

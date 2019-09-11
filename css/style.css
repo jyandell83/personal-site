@@ -1,16 +1,15 @@
 body {
-  color: ghostwhite;
-  background-color: #2f838c;
+  color: black;
+  background-color: aliceblue;
   font-family: 'Tinos', serif;
   margin: 0 auto;
 }
 
 header {
-  padding-left: 15px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../public/waves.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/waves.jpg");
   text-align: center;
-  height: 820px;
+  height: 1150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,6 +20,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header h2 {
+  color: ghostwhite;
 }
 
 header button {
@@ -46,7 +52,7 @@ header button {
 }
 
 header button:hover {
-  color: #f0508c;
+  color: limegreen;
   background-color: navajowhite;
   outline: 0;
   -webkit-transition: 0.2s ease-in-out;
@@ -54,10 +60,10 @@ header button:hover {
 }
 
 h1 {
-  color: navajowhite;
+  color: darkturquoise;
   font-size: 50px;
   font-family: 'Lobster', cursive;
-  margin: 0 auto;
+  margin: 200px auto 0 auto;
 }
 
 nav {
@@ -102,7 +108,7 @@ a {
 }
 
 a:hover {
-  color: #f0508c;
+  color: limegreen;
   background-color: mintcream;
 }
 

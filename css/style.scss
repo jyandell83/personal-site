@@ -1,24 +1,27 @@
-$headercolor : navajowhite;
+$headercolor : darkturquoise;
 $link-color: mintcream; 
-$link-hover : rgba(240,80,140,1);
+$link-hover : limegreen;
 $nav-background: rgba(0,0,0,1);
-$body-background: rgba(47,131,140,1);
+$body-background: aliceblue;
 
 
 body  {
-    color: ghostwhite;
+    color: black;
     background-color: $body-background;
     font-family: 'Tinos', serif;
     margin: 0 auto;
 }
 header {
-    padding-left: 15px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../public/waves.jpg");
     text-align: center;
-    height: 820px;
+    height: 1150px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    justify-content: flex-start;
+    h2 {
+        color: ghostwhite;
+    }
     button {
         background-color: transparent;
         border: 2px solid navajowhite;
@@ -49,7 +52,7 @@ h1 {
     color: $headercolor;
     font-size: 50px;
     font-family: 'Lobster', cursive;
-    margin: 0 auto;
+    margin: 200px auto 0 auto;
 }
 nav {
     width: 100%;
