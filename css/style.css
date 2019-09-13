@@ -25,6 +25,13 @@ header {
           justify-content: flex-start;
 }
 
+header h1 {
+  color: darkturquoise;
+  font-size: 50px;
+  font-family: 'Lobster', cursive;
+  margin: 200px auto 0 auto;
+}
+
 header h2 {
   color: ghostwhite;
 }
@@ -52,18 +59,11 @@ header button {
 }
 
 header button:hover {
-  color: limegreen;
-  background-color: navajowhite;
+  color: darkturquoise;
+  background-color: mintcream;
   outline: 0;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-}
-
-h1 {
-  color: darkturquoise;
-  font-size: 50px;
-  font-family: 'Lobster', cursive;
-  margin: 200px auto 0 auto;
 }
 
 nav {
@@ -108,7 +108,7 @@ a {
 }
 
 a:hover {
-  color: limegreen;
+  color: darkturquoise;
   background-color: mintcream;
 }
 
@@ -121,8 +121,16 @@ a:hover {
   display: inline;
 }
 
-.content {
-  padding: 10px;
+#cont {
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 1000px;
 }
 
 #mepic {

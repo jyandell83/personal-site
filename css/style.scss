@@ -1,6 +1,6 @@
 $headercolor : darkturquoise;
 $link-color: mintcream; 
-$link-hover : limegreen;
+$link-hover : darkturquoise;
 $nav-background: rgba(0,0,0,1);
 $body-background: aliceblue;
 
@@ -19,6 +19,12 @@ header {
     justify-content: center;
     flex-direction: column;
     justify-content: flex-start;
+    h1 {
+        color: $headercolor;
+        font-size: 50px;
+        font-family: 'Lobster', cursive;
+        margin: 200px auto 0 auto;
+    }
     h2 {
         color: ghostwhite;
     }
@@ -41,19 +47,14 @@ header {
         font-weight: 700;
         &:hover {
             color: $link-hover;
-            background-color: navajowhite;
+            background-color: mintcream;
             outline: 0;
             transition: 0.2s ease-in-out;
          }
     }
 }
 
-h1 {
-    color: $headercolor;
-    font-size: 50px;
-    font-family: 'Lobster', cursive;
-    margin: 200px auto 0 auto;
-}
+
 nav {
     width: 100%;
     ul {
@@ -104,8 +105,12 @@ a {
 }
 
 
-.content  {
-    padding: 10px;
+#cont  {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    min-height: 1000px;
 }
 
 #mepic {

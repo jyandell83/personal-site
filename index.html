@@ -18,6 +18,7 @@
                     Learn more  <i class="fas fa-arrow-down"></i>
                 </button>
         </header>
+        <div id="target"></div>
         <nav>
             <div id="navcont">
                 
@@ -34,17 +35,88 @@
                 
             </div>
         </nav>
+            
             <div id="cont"> 
                     <div v-if="counter === 'home'">
-                        <h2>Hi my name is Jeremy.</h2>
-                        <p>I am a full stack developer. I like water and forests.</p>
+                        <h2>Hi, my name is Jeremy.</h2>
+                        <p>I am a full stack developer. I like writing code and enjoying nature.</p>
+                        <img src="./public/redwood.jpg" alt="redwood trees" id="mepic">
                     </div>
-                    <h2 v-if="counter === 'resume'">Resume</h2>
+                    <div v-if="counter === 'resume'">
+                        <div id="resume-container">
+                            <section>
+                                <h1>Jeremy Yandell</h1>
+                                <h2>Full Stack Web Developer</h2>
+                                <h3>Los Angeles, CA</h3>
+                                <h3>github.com/jyandell83 | linkedin.com/in/jeremy-yandell</h3>
+                            </section>
+                            <section>
+                                <h4>Summary</h4>
+                                <p>
+                                    I am a full stack developer who has spent the last 6 years in the fast paced world of emergency medicine. I have a talent for breaking down problems and coming up with creative solutions under tight deadlines.
+                                </p>
+                            </section>
+                            <section>
+                                <h4>Technical Skills</h4>
+                                <p>
+                                    JavaScript, Express, React, Node.js, RESTful API, EJS, Bootstrap, HTML5, CSS3, Sass, Styled Components, Git, MongoDB, Mongoose, Python, Firebase
+                                </p>
+                            </section>
+                            <section>
+                                <h4>Projects</h4>
+                                <p>
+                                    The High Line
+                                    A react app where surfers can post reports for surf spots. Integrated with google maps API and weather api
+                                    Technologies used: Firebase | React | HTML5 | CSS3 | Styled Components | react-spring
+                                    
+                                    JamBand
+                                    A virtual community of musicians where you can post jams for other users to join. A react app built using flask and python on the backend with a SQL database.
+                                    Technologies used: Flask/Python | React | HTML5 | CSS3
+                                    
+                                    Mancala
+                                    An ancient strategy game brought to a digital environment. Compete to capture the most seeds.
+                                    Technologies used: JavaScript | HTML5 | CSS3 | Google Fonts
+                                    
+                                    My Top Ten
+                                    3 Model CRUD app using RESTful routes. Users can interact and share their top ten favorite movies.
+                                    Technologies used: MongoDB/Mongoose | Express | Node.js | HTML5 | CSS3
+                                </p>
+                            </section>
+                            <section>
+                                <h4>Experience</h4>
+                                <p>
+                                    Huntington Hospital - Patient Care Associate    	2016-2018
+                                    Emergency Care provider in Emergency Room / Trauma Center.
+                                    
+                                    Scripps Memorial Hospital - Emergency Room Technician	2013 - 2017
+                                    Direct patient care in the emergency/trauma setting. Assisted physicians and staff during medical 		procedures.
+                                    
+                                    Pacific Ambulance - Field Training Officer - EMT 	2013 -2014
+                                    Provided Basic Life Support in the prehospital setting. Trained and mentored new hires.
+                                    
+                                    CPC Search - Account Manager 	2010 - 2012
+                                    Directly managed SEM accounts across Adwords, Bing and Facebook.
+                                    
+                                    Stubhub - Site Merchandiser 	2007 - 2010
+                                    Managed front page content to highlight special promotions and seasonal offers.
+                                </p>
+                            </section>
+                            <section>
+                                <h4>Education</h4>
+                                <p>
+                                    University of California, Santa Barbara | B.A. English
+                                    General Assembly | Software Engineering Immersive
+                                    San Francisco Paramedics Association | EMT Program
+                                </p>
+                            </section>
+                            
+                        </div>
+                    </div>
                     <h2 v-if="counter === 'project'">Projects</h2>
                     <h2 v-if="counter === 'contact'">Contact</h2>
             </div>
             
-            <img src="./public/redwood.jpg" alt="redwood trees" id="mepic">
+            
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="./app.js"></script>
