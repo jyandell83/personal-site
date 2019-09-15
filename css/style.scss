@@ -8,7 +8,7 @@ $body-background: aliceblue;
 body  {
     color: black;
     background-color: $body-background;
-    font-family: 'Tinos', serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0 auto;
 }
 header {
@@ -27,10 +27,11 @@ header {
     }
     h2 {
         color: ghostwhite;
+        font-family: 'Tinos';
     }
     button {
         background-color: transparent;
-        border: 2px solid navajowhite;
+        border: 2px solid mintcream;
         color: mintcream;
         border-radius: 0.6em;
         cursor: pointer;
@@ -73,6 +74,16 @@ nav {
             background-color: $link-color;
         }
     }
+    a {
+    display: block;
+    color: $link-color;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover{
+        color: $link-hover;
+        background-color: $link-color;
+    }
+}
 }
 .fixed-nav{
     position: fixed;
@@ -83,16 +94,7 @@ nav {
 .fixed-nav + div {
     padding-top: 46px;
 }
-a {
-    display: block;
-    color: $link-color;
-    cursor: pointer;
-    text-decoration: none;
-    &:hover{
-        color: $link-hover;
-        background-color: $link-color;
-    }
-}
+
   
 
 
@@ -115,4 +117,44 @@ a {
 
 #mepic {
     width: 35%;
+}
+
+.project-pic {
+    width: 40%;
+}
+
+#resume-container {
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    ul {
+        list-style-type: none; 
+    }
+    .resume-header {
+        font-family: "Lucida Console", Monaco, monospace;
+        grid-column: 1 / 5;
+    }
+    section {
+        grid-column: 2 / 4;
+        text-align: left;
+    }
+    .resume-list {
+        grid-column-start: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        h4 {
+            border: 0;
+        }
+    }
+    h4 {
+        border-bottom: 1px solid black;
+    }
+}
+
+h1 {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+a {
+    text-decoration: none;
 }

@@ -44,76 +44,123 @@
                     </div>
                     <div v-if="counter === 'resume'">
                         <div id="resume-container">
-                            <section>
+                            <div class="resume-header">
                                 <h1>Jeremy Yandell</h1>
                                 <h2>Full Stack Web Developer</h2>
                                 <h3>Los Angeles, CA</h3>
                                 <h3>github.com/jyandell83 | linkedin.com/in/jeremy-yandell</h3>
-                            </section>
+                            </div>
                             <section>
                                 <h4>Summary</h4>
                                 <p>
                                     I am a full stack developer who has spent the last 6 years in the fast paced world of emergency medicine. I have a talent for breaking down problems and coming up with creative solutions under tight deadlines.
                                 </p>
                             </section>
-                            <section>
-                                <h4>Technical Skills</h4>
-                                <p>
-                                    JavaScript, Express, React, Node.js, RESTful API, EJS, Bootstrap, HTML5, CSS3, Sass, Styled Components, Git, MongoDB, Mongoose, Python, Firebase
-                                </p>
+                            <div class="resume-list">
+                            <h4>Technical Skills</h4>
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                    <li>Express</li>
+                                    <li>Node.js</li>
+                                    <li>RESTful API</li>
+                                    <li>EJS</li>
+                                    <li>Bootstrap</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>Sass</li>
+                                    <li>Styled Components</li>
+                                    <li>Git</li>
+                                    <li>MongoDB</li>
+                                    <li>Mongoose</li>
+                                    <li>Python</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </div>
                             </section>
                             <section>
                                 <h4>Projects</h4>
                                 <p>
-                                    The High Line
-                                    A react app where surfers can post reports for surf spots. Integrated with google maps API and weather api
+                                    <h5>The High Line</h5>
+                                    A react app where surfers can post reports for surf spots. Integrated with google maps API and weather api<br />
                                     Technologies used: Firebase | React | HTML5 | CSS3 | Styled Components | react-spring
+
+                                    <h5>My Top Ten</h5>
+                                    3 Model CRUD app using RESTful routes. Users can interact and share their top ten favorite movies.<br />
+                                    Technologies used: MongoDB/Mongoose | Express | Node.js | HTML5 | CSS3
                                     
-                                    JamBand
-                                    A virtual community of musicians where you can post jams for other users to join. A react app built using flask and python on the backend with a SQL database.
+                                    <h5>JamBand</h5>
+                                    A virtual community of musicians where you can post jams for other users to join. A react app built using flask/python on the backend with a SQL database.<br />
                                     Technologies used: Flask/Python | React | HTML5 | CSS3
                                     
-                                    Mancala
-                                    An ancient strategy game brought to a digital environment. Compete to capture the most seeds.
+                                    <h5>Mancala</h5> 
+                                    An ancient strategy game brought to a digital environment. Compete to capture the most seeds.<br />
                                     Technologies used: JavaScript | HTML5 | CSS3 | Google Fonts
                                     
-                                    My Top Ten
-                                    3 Model CRUD app using RESTful routes. Users can interact and share their top ten favorite movies.
-                                    Technologies used: MongoDB/Mongoose | Express | Node.js | HTML5 | CSS3
+                                    
                                 </p>
                             </section>
                             <section>
                                 <h4>Experience</h4>
                                 <p>
-                                    Huntington Hospital - Patient Care Associate    	2016-2018
-                                    Emergency Care provider in Emergency Room / Trauma Center.
+                                    <strong>Huntington Hospital - Patient Care Associate</strong> 
+                                    <br />2016-2018
+                                    Emergency Care provider in Emergency Room / Trauma Center.<br /><br />
                                     
-                                    Scripps Memorial Hospital - Emergency Room Technician	2013 - 2017
-                                    Direct patient care in the emergency/trauma setting. Assisted physicians and staff during medical 		procedures.
+                                    <strong>Scripps Memorial Hospital - Emergency Room Technician</strong> 
+                                    <br />2013 - 2017
+                                    Direct patient care in the emergency/trauma setting. Assisted physicians and staff during medical 		procedures.<br /><br />
                                     
-                                    Pacific Ambulance - Field Training Officer - EMT 	2013 -2014
-                                    Provided Basic Life Support in the prehospital setting. Trained and mentored new hires.
+                                    <strong>Pacific Ambulance - Field Training Officer - EMT</strong>
+                                    <br />2013 -2014
+                                    Provided Basic Life Support in the prehospital setting. Trained and mentored new hires.<br /><br />
                                     
-                                    CPC Search - Account Manager 	2010 - 2012
-                                    Directly managed SEM accounts across Adwords, Bing and Facebook.
+                                    <strong>CPC Search - Account Manager</strong>
+                                    <br />2010 - 2012
+                                    Directly managed SEM accounts across Adwords, Bing and Facebook.<br /><br />
                                     
-                                    Stubhub - Site Merchandiser 	2007 - 2010
-                                    Managed front page content to highlight special promotions and seasonal offers.
+                                    <strong>Stubhub - Site Merchandiser</strong>
+                                    <br />2007 - 2010
+                                    Managed front page content to highlight special promotions and seasonal offers.<br /><br />
                                 </p>
                             </section>
                             <section>
                                 <h4>Education</h4>
                                 <p>
-                                    University of California, Santa Barbara | B.A. English
-                                    General Assembly | Software Engineering Immersive
+                                    University of California, Santa Barbara | B.A. English<br />
+                                    General Assembly | Software Engineering Immersive<br />
                                     San Francisco Paramedics Association | EMT Program
                                 </p>
                             </section>
                             
                         </div>
                     </div>
-                    <h2 v-if="counter === 'project'">Projects</h2>
-                    <h2 v-if="counter === 'contact'">Contact</h2>
+                    <div v-if="counter === 'project'">
+                        <div>
+                            <h1>The High Line</h1>
+                            <img class ="project-pic" src="./public/Highline-pic.png" alt="project-pic" />
+                            <p>An app for surfers to post reports for surf spots. Built using Firebase, React,  HTML and CSS.</p>
+                        </div>
+                        <div>
+                                <h1>JamBand</h1>
+                                <img class ="project-pic" src="./public/JamBand-pic.png" alt="project-pic" />
+                                <p>An app for musicians to connect with other musicians. Built using Python/Flask, React, SQL, HTML and CSS.</p>
+                            </div>
+                        <div>
+                            <h1>MyTopTen</h1>
+                            <img class ="project-pic" src="./public/MyTopTen-pic.png" alt="project-pic" />
+                            <p>An app for movie buffs to share their favorite movies. Built using MongoDB, Express, Node, HTML and CSS.</p>
+                        </div>
+                        <div>
+                                <h1>Mancala</h1>
+                                <img class ="project-pic" src="./public/mancala-pic.png" alt="project-pic" />
+                                <p>An ancient game brought to life with Javascript, HTML and CSS.</p>
+                            </div>
+                    </div>
+                    <div v-if="counter === 'contact'">
+                            <a href="https://github.com/jyandell83"><h1>Github <i class="fab fa-github-alt"></i></h1></a>
+                            <a href="https://www.linkedin.com/in/jeremy-yandell/"><h1>LinkedIn <i class="fab fa-linkedin"></i></h1></a>
+                    </div>
             </div>
             
             
