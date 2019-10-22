@@ -29,7 +29,7 @@ header {
         color: ghostwhite;
         font-family: 'Tinos';
     }
-    button {
+    button{
         background-color: transparent;
         border: 2px solid mintcream;
         color: mintcream;
@@ -47,11 +47,20 @@ header {
         text-transform: uppercase;
         font-weight: 700;
         &:hover {
+            transform: translateY(-3px);
             color: $link-hover;
             background-color: mintcream;
             outline: 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             transition: 0.2s ease-in-out;
          }
+         &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.2s ease-in-out;
+         }
+         &:focus {outline:0;}
+
     }
 }
 

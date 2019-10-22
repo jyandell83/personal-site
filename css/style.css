@@ -60,11 +60,28 @@ header button {
 }
 
 header button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
   color: darkturquoise;
   background-color: mintcream;
   outline: 0;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+
+header button:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+header button:focus {
+  outline: 0;
 }
 
 nav {
