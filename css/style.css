@@ -1,7 +1,7 @@
 body {
-  color: black;
-  background-color: aliceblue;
-  font-family: 'Courier New', Courier, monospace;
+  color: #2d3436;
+  background-color: #dfe6e9;
+  font-family: 'Lato', sans-serif;
   margin: 0 auto;
 }
 
@@ -26,21 +26,21 @@ header {
 }
 
 header h1 {
-  color: darkturquoise;
+  color: #fff;
   font-size: 50px;
-  font-family: 'Lobster', cursive;
   margin: 200px auto 0 auto;
+  letter-spacing: 7px;
 }
 
 header h2 {
-  color: ghostwhite;
-  font-family: 'Tinos';
+  color: #fff;
+  letter-spacing: 5px;
 }
 
 header button {
   background-color: transparent;
-  border: 2px solid mintcream;
-  color: mintcream;
+  border: 2px solid #acfffd;
+  color: #fff;
   border-radius: 0.6em;
   cursor: pointer;
   display: -webkit-box;
@@ -62,8 +62,8 @@ header button {
 header button:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
-  color: darkturquoise;
-  background-color: mintcream;
+  color: #007976;
+  background-color: #acfffd;
   outline: 0;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -89,12 +89,11 @@ nav {
 }
 
 nav ul {
-  font-family: 'Lato', sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #007976;
 }
 
 nav li {
@@ -104,19 +103,20 @@ nav li {
 }
 
 nav li:hover {
-  background-color: mintcream;
+  background-color: #acfffd;
+  color: #007976;
 }
 
 nav a {
   display: block;
-  color: mintcream;
+  color: #fff;
   cursor: pointer;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: darkturquoise;
-  background-color: mintcream;
+  background-color: #acfffd;
+  color: #007976;
 }
 
 .fixed-nav {
@@ -160,7 +160,7 @@ nav a:hover {
 }
 
 #resume-container {
-  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -172,7 +172,6 @@ nav a:hover {
 }
 
 #resume-container .resume-header {
-  font-family: "Lucida Console", Monaco, monospace;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1 / 5;
@@ -201,8 +200,8 @@ nav a:hover {
   border-bottom: 1px solid black;
 }
 
-h1 {
-  font-family: "Lucida Console", Monaco, monospace;
+#resume-container h5 {
+  text-decoration: underline;
 }
 
 a {
