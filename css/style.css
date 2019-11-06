@@ -219,6 +219,24 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.resources {
+  text-align: left;
+}
+
+.resources__list {
+  list-style: none;
+}
+
+.resources a {
+  color: #2d3436;
+  border-bottom: 1px solid #2d3436;
+}
+
+.resources a:hover {
+  color: #00cec9;
+  border-bottom: 1px solid #00cec9;
+}
+
 a {
   text-decoration: none;
 }

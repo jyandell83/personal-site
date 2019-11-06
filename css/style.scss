@@ -185,6 +185,25 @@ nav {
     }
 }
 
+.resources {
+
+    text-align: left;
+
+    &__list {
+        list-style: none;
+        
+    }
+
+    a {
+        color: $color-black;
+        border-bottom: 1px solid $color-black;
+        &:hover {
+            color: $color-primary;
+            border-bottom: 1px solid $color-primary;
+        }
+    }
+}
+
 a {
     text-decoration: none;
 }
