@@ -27,6 +27,7 @@
                         <a v-on:click="counter = 'resume'"><li>Resume</li></a>
                         <a v-on:click="counter = 'project'"><li>Projects</li></a>
                         <a v-on:click="counter = 'contact'"><li>Contact</li></a>
+                        <a v-on:click="counter = 'resouces'"><li>Resources</li></a>
                         <span class="social">
                             <a href="https://github.com/jyandell83"><li><i class="fab fa-github-alt"></i></li></a>
                             <a href="https://www.linkedin.com/in/jeremy-yandell/"><li><i class="fab fa-linkedin"></i></li></a>
@@ -170,6 +171,49 @@
                     <div v-if="counter === 'contact'">
                             <a href="https://github.com/jyandell83"><h1>Github <i class="fab fa-github-alt"></i></h1></a>
                             <a href="https://www.linkedin.com/in/jeremy-yandell/"><h1>LinkedIn <i class="fab fa-linkedin"></i></h1></a>
+                    </div>
+                    <div v-if="counter === 'resouces'">
+                        <div class="resources">
+                            <h3 class="heading--tertiary">
+                                JavaScript
+                            </h3>
+                            <ul class="resources__list">
+                                <li>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN JS</a>
+                                </li>
+                                <li>
+                                    <a href="https://javascript.info/">JavaScript.info</a>
+                                </li>
+                            </ul>
+                            <h3 class="heading--tertiary">
+                                    CSS
+                            </h3>
+                            <ul class="resources__list">
+                                <li>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN CSS</a>
+                                </li>
+                            </ul>
+                            <h3 class="heading--tertiary">
+                                    Fonts and Design
+                            </h3>
+                            <ul class="resources__list">
+                                <li>
+                                    <a href="https://fonts.google.com/">Google Fonts</a>
+                                </li>
+                                <li>
+                                    <a href="https://flatuicolors.com/">Flat UI Colors</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.0to255.com/">0 to 255</a>
+                                </li>
+                                <li>
+                                    <a href="https://fontawesome.com/">Font Awesome</a>
+                                </li>
+                                <li>
+                                    <a href="https://bennettfeely.com/clippy/">Clippy</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
             </div>
             
