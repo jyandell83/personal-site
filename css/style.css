@@ -35,12 +35,21 @@ header h1 {
   font-size: 5rem;
   margin: 20rem auto 0 auto;
   letter-spacing: .7rem;
-  font-weight: 100;
+  font-weight: 300;
+  background-image: radial-gradient(circle at center, #acfffd, #007976);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
 }
 
 header h2 {
-  color: #fff;
   letter-spacing: .5rem;
+  font-weight: 200;
+  background-image: -webkit-gradient(linear, left top, right top, from(#acfffd), to(#007976));
+  background-image: linear-gradient(to right, #acfffd, #007976);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
 }
 
 header button {

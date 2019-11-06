@@ -38,11 +38,19 @@ header {
         font-size: 5rem;
         margin: 20rem auto 0 auto;
         letter-spacing: .7rem;
-        font-weight: 100;
+        font-weight: 300;
+        background-image: radial-gradient(circle at center, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-transform: uppercase;
     }
     h2 {
-        color: #fff;
         letter-spacing: .5rem;
+        font-weight: 200;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-transform: uppercase;
     }
     button{
         background-color: transparent;
