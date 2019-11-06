@@ -166,10 +166,6 @@ nav a:hover {
   min-height: 100rem;
 }
 
-#mepic {
-  width: 35%;
-}
-
 .project-pic {
   width: 40%;
 }
@@ -235,6 +231,26 @@ nav a:hover {
 .resources a:hover {
   color: #00cec9;
   border-bottom: 1px solid #00cec9;
+}
+
+.home-container {
+  width: 80%;
+  margin-top: 5rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.home-container__shape {
+  width: 30rem;
+  height: 30rem;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+
+.home-container__img {
+  width: 100%;
 }
 
 a {

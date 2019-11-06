@@ -38,10 +38,17 @@
         </nav>
             
             <div id="cont"> 
-                    <div v-if="counter === 'home'">
-                        <h2>Hi, my name is Jeremy.</h2>
-                        <p>I am a full stack developer. I like writing code and enjoying nature.</p>
-                        <img src="./public/redwood.jpg" alt="redwood trees" id="mepic">
+                    <div v-if="counter === 'home'" class="home-container">
+                        
+                            <figure class="home-container__shape">
+                                <img src="./public/redwood.jpg" alt="redwood trees" class="home-container__img">
+                            </figure>
+                            <h3>Hi, my name is Jeremy.</h3>
+                            <p>I am a full stack developer. I like writing code and enjoying nature. I am curious about the world and I like solving problems and playing games. When I am not in front of a computer, I enjoy surfing and playing guitar.</p>
+
+                            <p>Feel free to reach out with any business ideas or even just to chat about life.</p>
+                            
+                        
                     </div>
                     <div v-if="counter === 'resume'">
                         <div id="resume-container">
