@@ -35,3 +35,4 @@ const scrollClick = ()  =>  {
 //Listen for scroll, glue nav down
 window.addEventListener('scroll', stickNav);
 learnMoreButton.addEventListener('click', scrollClick);
+nav.addEventListener('click', scrollClick);
