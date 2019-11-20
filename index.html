@@ -148,36 +148,36 @@
                             <h1>The High Line</h1>
                             <img class ="project-pic" src="./public/Highline-pic.png" alt="project-pic" />
                             <p>An app for surfers to post reports for surf spots. Built using Firebase, React,  HTML and CSS.</p>
-                            <div><a href="https://github.com/jyandell83/react-surf">Code </a>| <a href="https://react-surf.firebaseapp.com/">Site</a></div>
+                            <div><a class="project__link" href="https://github.com/jyandell83/react-surf">Code </a>| <a class="project__link" href="https://react-surf.firebaseapp.com/">Site</a></div>
                         </div>
                         <div>
                             <h1>LA Food Policy Council Dashboard</h1>
                             <img class ="project-pic" src="./public/la-food-council.png" alt="project-pic" />
                             <p>Hackathon entry for the LA food policy council user dashboard. Built using Firebase and React</p>
-                            <div><a href="https://github.com/jyandell83/GoodFoodLA-Hack-a-Thon">Code </a>| <a href="https://goodfoodla-hack-a-thon.firebaseapp.com/">Site</a></div>
+                            <div><a class="project__link" href="https://github.com/jyandell83/GoodFoodLA-Hack-a-Thon">Code </a>| <a class="project__link" href="https://goodfoodla-hack-a-thon.firebaseapp.com/">Site</a></div>
                         </div>
                         <div>
                                 <h1>JamBand</h1>
                                 <img class ="project-pic" src="./public/JamBand-pic.png" alt="project-pic" />
                                 <p>An app for musicians to connect with other musicians. Built using Python/Flask, React, SQL, HTML and CSS.</p>
-                                <div><a href="https://github.com/jyandell83/react-api-jam-sesh-finder">Code </a>| <a href="https://jamband.herokuapp.com/">Site</a></div>
+                                <div><a class="project__link" href="https://github.com/jyandell83/react-api-jam-sesh-finder">Code </a>| <a class="project__link" href="https://jamband.herokuapp.com/">Site</a></div>
                         </div>
                         <div>
                             <h1>MyTopTen</h1>
                             <img class ="project-pic" src="./public/MyTopTen-pic.png" alt="project-pic" />
                             <p>An app for movie buffs to share their favorite movies. Built using MongoDB, Express, Node, HTML and CSS.</p>
-                            <div><a href="https://github.com/jyandell83/top-ten-movies">Code </a>| <a href="https://mytopten.herokuapp.com/">Site</a></div>
+                            <div><a class="project__link" href="https://github.com/jyandell83/top-ten-movies">Code </a>| <a class="project__link" href="https://mytopten.herokuapp.com/">Site</a></div>
                         </div>
                         <div>
                                 <h1>Mancala</h1>
                                 <img class ="project-pic" src="./public/mancala-pic.png" alt="project-pic" />
                                 <p>An ancient game brought to life with Javascript, HTML and CSS.</p>
-                                <div><a href="https://github.com/jyandell83/mancala">Code </a>| <a href="https://jyandell83.github.io/mancala/">Site</a></div>
+                                <div><a class="project__link" href="https://github.com/jyandell83/mancala">Code </a>| <a class="project__link" href="https://jyandell83.github.io/mancala/">Site</a></div>
                             </div>
                     </div>
-                    <div v-if="counter === 'contact'">
-                            <a href="https://github.com/jyandell83"><h1>Github <i class="fab fa-github-alt"></i></h1></a>
-                            <a href="https://www.linkedin.com/in/jeremy-yandell/"><h1>LinkedIn <i class="fab fa-linkedin"></i></h1></a>
+                    <div class ="contact" v-if="counter === 'contact'">
+                            <a class="contact__link" href="https://github.com/jyandell83">Github <i class="fab fa-github-alt"></i></a>
+                            <a class="contact__link" href="https://www.linkedin.com/in/jeremy-yandell/">LinkedIn <i class="fab fa-linkedin"></i></a>
                     </div>
                     <div v-if="counter === 'resouces'">
                         <div class="resources">
@@ -224,7 +224,9 @@
                         </div>
                     </div>
             </div>
-            
+            <footer class="footer">
+                this is footer
+            </footer>
             
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>

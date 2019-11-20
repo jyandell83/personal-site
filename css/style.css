@@ -216,6 +216,43 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.project__link:link, .project__link:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2d3436;
+  border-bottom: 3px solid #007976;
+}
+
+.project__link:hover {
+  color: #00cec9;
+  border-bottom: 3px solid #acfffd;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.contact {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.contact__link:link, .contact__link:visited {
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2d3436;
+  border-bottom: 3px solid #007976;
+  font-size: 2.5rem;
+  display: block;
+  padding-bottom: .75rem;
+}
+
+.contact__link:hover {
+  color: #00cec9;
+  border-bottom: 3px solid #acfffd;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
 .resources {
   text-align: left;
 }

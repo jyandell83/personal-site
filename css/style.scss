@@ -185,6 +185,53 @@ nav {
     }
 }
 
+.project {
+
+
+    &__link {
+
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-black; 
+            border-bottom: 3px solid $color-primary-dark;
+        }
+
+        &:hover {
+            color: $color-primary;
+            border-bottom: 3px solid $color-primary-light;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+.contact {
+    text-align: center;
+    padding: 2.5rem;
+    
+    &__link {
+
+        &:link,
+        &:visited {
+            margin-bottom: 2.5rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-black; 
+            border-bottom: 3px solid $color-primary-dark;
+            font-size: 2.5rem;
+            display: block;
+            padding-bottom: .75rem;
+        }
+
+        &:hover {
+            color: $color-primary;
+            border-bottom: 3px solid $color-primary-light;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+
 .resources {
 
     text-align: left;
@@ -228,3 +275,5 @@ nav {
 a {
     text-decoration: none;
 }
+
+
