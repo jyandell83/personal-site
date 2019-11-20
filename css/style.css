@@ -164,7 +164,7 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100rem;
+  min-height: 100vh;
 }
 
 .project-pic {
@@ -298,5 +298,15 @@ nav a:hover {
 
 a {
   text-decoration: none;
+}
+
+.footer {
+  height: 5rem;
+  background-color: #007976;
+  color: #fff;
+  padding-top: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
