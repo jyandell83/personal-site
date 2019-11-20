@@ -187,6 +187,10 @@ nav {
 
 .project {
 
+    &__img-link:hover {
+        transform: scale(1.03);
+    }
+
 
     &__link {
 
