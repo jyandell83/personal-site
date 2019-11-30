@@ -23,8 +23,8 @@
             <div id="navcont">
                 
                     <ul>
-                        <a v-on:click="counter = 'home'"><li>Home</li></a>
-                        <a v-on:click="counter = 'resume'"><li>Resume</li></a>
+                        <a v-on:click="counter = 'home'"><li>About Me</li></a>
+                        <a v-on:click="counter = 'resume'"><li>Resum&eacute;</li></a>
                         <a v-on:click="counter = 'project'"><li>Projects</li></a>
                         <a v-on:click="counter = 'contact'"><li>Contact</li></a>
                         <a v-on:click="counter = 'resouces'"><li>Resources</li></a>
@@ -39,14 +39,22 @@
             
             <div id="cont"> 
                     <div v-if="counter === 'home'" class="home-container">
-                        
-                            <figure class="home-container__shape">
+                        <div class="home-container--left">
+                            <figure class="home-container__shape float-left">
                                 <img src="./public/redwood.jpg" alt="redwood trees" class="home-container__img">
                             </figure>
                             <h3>Hi, my name is Jeremy.</h3>
-                            <p>I am a full stack developer. I like writing code and enjoying nature. I am curious about the world and I like solving problems and playing games. When I am not in front of a computer, I enjoy surfing and playing guitar.</p>
+                            <p>I am a full stack developer highly skilled in JavaScript. I like writing code and enjoying nature. I am curious about the world and I like solving problems and playing games. When I am not in front of a computer, I enjoy surfing and playing guitar.</p>
 
                             <p>Feel free to reach out with any business ideas or even just to chat about life.</p>
+                        </div>
+                        <div class="margin-top-big">&nbsp;</div>
+                        <div class="home-container" >
+                            
+                            <h3>Things I am learning</h3>
+                            <p>Currently I am mastering SQL, Advanced CSS using BEM methedology with an emphasis on perfecting responsive design and starting to learn C programming language. I spend a lot of time thinking about functional programming.</p>
+                        </div>
+
                             
                         
                     </div>
@@ -144,7 +152,15 @@
                         </div>
                     </div>
                     <div v-if="counter === 'project'">
-                        <div>
+                        <div class="project__card">
+                            <h1>AutoFixerz</h1>
+                            <a href="https://autofixerz.firebaseapp.com/" class="project__img-link">
+                                <img class ="project-pic" src="./public/autofixerz.png" alt="project-pic" />
+                            </a>
+                            <p>A conceptual website designed and developed for Techstars South Central Hackathon. Built using Firebase, React,  HTML and CSS.</p>
+                            <div><a class="project__link" href="https://github.com/jyandell83/react-surf">Code </a>| <a class="project__link" href="https://react-surf.firebaseapp.com/">Site</a></div>
+                        </div>
+                        <div class="project__card">
                             <h1>The High Line</h1>
                             <a href="https://react-surf.firebaseapp.com/" class="project__img-link">
                                 <img class ="project-pic" src="./public/Highline-pic.png" alt="project-pic" />
@@ -152,7 +168,7 @@
                             <p>An app for surfers to post reports for surf spots. Built using Firebase, React,  HTML and CSS.</p>
                             <div><a class="project__link" href="https://github.com/jyandell83/react-surf">Code </a>| <a class="project__link" href="https://react-surf.firebaseapp.com/">Site</a></div>
                         </div>
-                        <div>
+                        <div class="project__card">
                             <h1>LA Food Policy Council Dashboard</h1>
                             <a href="https://goodfoodla-hack-a-thon.firebaseapp.com/" class="project__img-link">
                                 <img class ="project-pic" src="./public/la-food-council.png" alt="project-pic" />
@@ -161,7 +177,7 @@
                             <p>Hackathon entry for the LA food policy council user dashboard. Built using Firebase and React</p>
                             <div><a class="project__link" href="https://github.com/jyandell83/GoodFoodLA-Hack-a-Thon">Code </a>| <a class="project__link" href="https://goodfoodla-hack-a-thon.firebaseapp.com/">Site</a></div>
                         </div>
-                        <div>
+                        <div class="project__card">
                             <h1>JamBand</h1>
                             <a href="https://jamband.herokuapp.com/" class="project__img-link">
                                 <img class ="project-pic" src="./public/JamBand-pic.png" alt="project-pic" />
@@ -169,7 +185,7 @@
                             <p>An app for musicians to connect with other musicians. Built using Python/Flask, React, SQL, HTML and CSS.</p>
                             <div><a class="project__link" href="https://github.com/jyandell83/react-api-jam-sesh-finder">Code </a>| <a class="project__link" href="https://jamband.herokuapp.com/">Site</a></div>
                         </div>
-                        <div>
+                        <div class="project__card">
                             <h1>MyTopTen</h1>
                             <a href="https://mytopten.herokuapp.com/" class="project__img-link">
                                 <img class ="project-pic" src="./public/MyTopTen-pic.png" alt="project-pic" />
@@ -178,7 +194,7 @@
                             <p>An app for movie buffs to share their favorite movies. Built using MongoDB, Express, Node, HTML and CSS.</p>
                             <div><a class="project__link" href="https://github.com/jyandell83/top-ten-movies">Code </a>| <a class="project__link" href="https://mytopten.herokuapp.com/">Site</a></div>
                         </div>
-                        <div>
+                        <div class="project__card">
                             <h1>Mancala</h1>
                             <a href="https://jyandell83.github.io/mancala/" class="project__img-link">
                                 <img class ="project-pic" src="./public/mancala-pic.png" alt="project-pic" />

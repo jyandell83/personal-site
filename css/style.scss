@@ -12,6 +12,12 @@ $color-primary-dark: #007976;
 $color-black: rgba(45, 52, 54,1.0);
 $color-grey: #dfe6e9;
 
+// utilities
+.float-left {float: left;}
+.float-right {float: right;}
+.margin-top-big {margin-top: 20rem;}
+.margin-top-huge {margin-top: 30rem;}
+
 html {
     //this defines what 1 rem is
     font-size: 62.5%;
@@ -187,6 +193,14 @@ nav {
 
 .project {
 
+    &__card {
+        width: 80%;
+        border: 1px solid black;
+        margin: 2rem auto;
+        padding: 0 2rem 2rem 2rem;
+        background-color: #f5f5f5;
+    }
+
     &__img-link:hover {
         transform: scale(1.03);
     }
@@ -261,10 +275,18 @@ nav {
     text-align: left;
     line-height: 1.5;
 
+    &--right {
+        text-align: right;
+    }
+
+    &--left {
+        text-align: left;
+    }
+    
+
     &__shape {
         width: 30rem;
         height: 30rem;
-        float: left;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
@@ -273,6 +295,7 @@ nav {
 
     &__img {
         width: 100%;
+
     }
 }
 
