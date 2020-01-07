@@ -126,10 +126,19 @@ nav ul {
   padding: 0;
   overflow: hidden;
   background-color: #007976;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
 }
 
 nav li {
-  float: left;
   padding: 1.4rem 1.6rem;
   text-align: center;
 }

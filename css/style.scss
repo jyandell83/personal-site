@@ -104,9 +104,17 @@ nav {
         padding: 0;
         overflow: hidden;
         background-color: $color-primary-dark;
+
+        display: flex;
+
+        span {
+
+            display: flex;
+            margin-left: auto;
+        }
     }
     li {
-        float: left;
+        
         padding: 1.4rem 1.6rem;
         text-align: center;
         &:hover{
