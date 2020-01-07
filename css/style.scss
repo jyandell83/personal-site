@@ -15,7 +15,13 @@ $color-grey: #dfe6e9;
 // utilities
 .float-left {float: left;}
 .float-right {float: right;}
-.margin-top-big {margin-top: 20rem;}
+.margin-top-big {
+    margin-top: 20rem;
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 5rem;
+    }
+}
 .margin-top-huge {margin-top: 30rem;}
 
 html {
@@ -107,6 +113,10 @@ nav {
 
         display: flex;
 
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+
         span {
 
             display: flex;
@@ -138,9 +148,17 @@ nav {
     top:0;
     z-index: 1;
     width: 100%;
+
+    @media only screen and (max-width: 600px) {
+        position: relative;
+    }
 }
 .fixed-nav + div {
     padding-top: 4.6rem;
+
+    @media only screen and (max-width: 600px) {
+        padding-top: 0;
+    }
 }
 
   
@@ -283,8 +301,15 @@ nav {
     text-align: left;
     line-height: 1.5;
 
+    
+
     &--right {
         text-align: right;
+
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &--left {
@@ -299,6 +324,14 @@ nav {
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
+
+        @media only screen and (max-width: 600px) {
+            display: block;
+            -webkit-shape-outside: initial;
+            shape-outside: initial;
+        }
+
+        
     }
 
     &__img {

@@ -10,6 +10,12 @@
   margin-top: 20rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .margin-top-big {
+    margin-top: 5rem;
+  }
+}
+
 .margin-top-huge {
   margin-top: 30rem;
 }
@@ -131,6 +137,15 @@ nav ul {
   display: flex;
 }
 
+@media only screen and (max-width: 600px) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 nav ul span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,8 +182,20 @@ nav a:hover {
   width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+  .fixed-nav {
+    position: relative;
+  }
+}
+
 .fixed-nav + div {
   padding-top: 4.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .fixed-nav + div {
+    padding-top: 0;
+  }
 }
 
 .social {
@@ -320,6 +347,18 @@ nav a:hover {
   text-align: right;
 }
 
+@media only screen and (max-width: 600px) {
+  .home-container--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .home-container--left {
   text-align: left;
 }
@@ -330,6 +369,13 @@ nav a:hover {
   shape-outside: circle(50% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
+}
+
+@media only screen and (max-width: 600px) {
+  .home-container__shape {
+    display: block;
+    shape-outside: initial;
+  }
 }
 
 .home-container__img {
