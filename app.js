@@ -1,4 +1,4 @@
-import Vue from 'vue'
+
 //These are variables
 const nav = document.querySelector('nav');
 const learnMoreButton = document.querySelector('#learn-more-btn');
