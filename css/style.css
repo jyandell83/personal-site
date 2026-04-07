@@ -225,35 +225,15 @@ nav a:hover {
 
 #resume-container {
   line-height: 1.5;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 15px;
 }
 
 #resume-container ul {
   list-style-type: none;
 }
 
-#resume-container .resume-header {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
-}
-
 #resume-container section {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
   text-align: left;
-}
-
-#resume-container .resume-list {
-  -ms-grid-column: 4;
-      grid-column-start: 4;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 5;
 }
 
 #resume-container .resume-list h4 {
@@ -266,6 +246,20 @@ nav a:hover {
 
 #resume-container h5 {
   text-decoration: underline;
+}
+
+#resume-container .resume__link:link, #resume-container .resume__link:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2d3436;
+  border-bottom: 3px solid #007976;
+}
+
+#resume-container .resume__link:hover {
+  color: #00cec9;
+  border-bottom: 3px solid #acfffd;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .project__card {

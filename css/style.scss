@@ -189,22 +189,17 @@ nav {
 
 #resume-container {
     line-height: 1.5;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:15px;
     ul {
         list-style-type: none; 
     }
     .resume-header {
-        grid-column: 1 / 5;
+        
     }
     section {
-        grid-column: 2 / 4;
         text-align: left;
     }
     .resume-list {
-        grid-column-start: 4;
-        grid-row-start: 2;
-        grid-row-end: 5;
         h4 {
             border: 0;
         }
@@ -215,7 +210,22 @@ nav {
     h5 {
         text-decoration: underline;
     }
+    .resume__link:link, .resume__link:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #2d3436;
+        border-bottom: 3px solid #007976;
+      }
+    
+      
+      .resume__link:hover {
+        color: #00cec9;
+        border-bottom: 3px solid #acfffd;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+      }
 }
+
 
 .project {
 
@@ -354,4 +364,8 @@ a {
     margin-top: 3rem;
   
   }
+
+  
+
+
 
