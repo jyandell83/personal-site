@@ -1,14 +1,26 @@
+import "./Header.css";
+
 const Header = () => {
   return (
     <header className="site-header">
-      <a href="/" className="logo">
-        Jeremy Yandell
-      </a>
+      <nav className="site-nav" aria-label="Primary navigation">
+        <a href="/" className="site-logo">
+          Jeremy Yandell
+        </a>
 
-      <nav className="site-nav">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+        <ul className="nav-links">
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
   );

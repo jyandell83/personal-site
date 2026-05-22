@@ -1,46 +1,27 @@
-// import { useState } from "react";
+import Header from "@/components/Header/Header";
+import Hero from "@/components/Hero/Hero";
+import About from "@/components/About/About";
+import Projects from "@/components/Projects/Projects";
+import Experience from "@/components/Experience/Experience";
+import Skills from "@/components/Skills/Skills";
+import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 
 function App() {
   return (
     <>
-      <header className="site-header">
-        <a href="/" className="logo">
-          Jeremy Yandell
-        </a>
-
-        <nav className="site-nav">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+      <Header />
 
       <main>
-        <section className="hero">
-          <h1 className="eyebrow">Senior Frontend Engineer</h1>
-
-          <p>
-            I build clean, data-driven web applications for complex user
-            workflows.
-          </p>
-
-          <p className="hero-copy">
-            Frontend-focused software engineer with 5+ years of experience
-            building production web applications in fintech environments. I
-            specialize in React, Angular, TypeScript, API integrations, and
-            polished user interfaces.
-          </p>
-
-          <div className="hero-actions">
-            <a className="btn btn-primary" href="#projects">
-              View Projects
-            </a>
-            <a className="btn btn-secondary" href="/resume.pdf">
-              View Resume
-            </a>
-          </div>
-        </section>
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Contact />
       </main>
+
+      <Footer />
     </>
   );
 }

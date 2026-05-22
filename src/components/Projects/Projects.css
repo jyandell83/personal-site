@@ -1,0 +1,72 @@
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+}
+
+.project-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.project-content p {
+  color: var(--muted);
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  list-style: none;
+}
+
+.tech-list li {
+  background: rgba(63, 92, 74, 0.08);
+  color: var(--primary);
+
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.project-links a {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.project-links a:hover {
+  color: var(--primary);
+}

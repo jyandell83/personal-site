@@ -61,34 +61,6 @@ section {
   padding: 6rem 0;
 }
 
-.site-header {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 1.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-weight: 700;
-  color: var(--text);
-}
-
-.site-nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.site-nav a {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.site-nav a:hover {
-  color: var(--primary);
-}
-
 .hero {
   min-height: calc(100vh - 84px);
   display: flex;
@@ -150,4 +122,34 @@ section {
 
 .btn:hover {
   transform: translateY(-1px);
+}
+
+/* About Section  */
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.section-label {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-header h2 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.about-content {
+  display: grid;
+  gap: 1.25rem;
+  color: var(--muted);
+  font-size: 1.1rem;
 }

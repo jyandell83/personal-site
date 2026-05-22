@@ -1,11 +1,11 @@
 const Hero = () => {
   return (
-    <section className="hero">
-      <h1 className="eyebrow">Senior Frontend Engineer</h1>
+    <section className="hero" aria-labelledby="hero-heading">
+      <p className="hero-label">Senior Frontend Engineer</p>
 
-      <p>
+      <h1 id="hero-heading">
         I build clean, data-driven web applications for complex user workflows.
-      </p>
+      </h1>
 
       <p className="hero-copy">
         Frontend-focused software engineer with 5+ years of experience building
@@ -14,10 +14,11 @@ const Hero = () => {
         interfaces.
       </p>
 
-      <div className="hero-actions">
+      <div className="hero-actions" aria-label="Hero actions">
         <a className="btn btn-primary" href="#projects">
           View Projects
         </a>
+
         <a className="btn btn-secondary" href="/resume.pdf">
           View Resume
         </a>
