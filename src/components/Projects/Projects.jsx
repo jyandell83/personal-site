@@ -8,7 +8,7 @@ const projects = [
     description:
       "Real-time baseball dashboard built with React and the MLB Stats API featuring live game updates, standings, player statistics, and responsive UI patterns.",
     tech: ["React", "Vite", "REST API", "CSS"],
-    liveUrl: "https://mlb-stats-app-brown.vercel.app/",
+    liveUrl: "https://live-mlb-dashboard.vercel.app/",
     githubUrl: "https://github.com/jyandell83/mlb-stats-app",
   },
   {
