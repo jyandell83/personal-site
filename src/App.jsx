@@ -3,20 +3,43 @@
 function App() {
   return (
     <>
-      <header>
-        <h1>Jeremy Yandell</h1>
+      <header className="site-header">
+        <a href="/" className="logo">
+          Jeremy Yandell
+        </a>
+
+        <nav className="site-nav">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
 
       <main>
-        <section id="hero">Hero</section>
+        <section className="hero">
+          <h1 className="eyebrow">Senior Frontend Engineer</h1>
 
-        <section id="about">About</section>
+          <p>
+            I build clean, data-driven web applications for complex user
+            workflows.
+          </p>
 
-        <section id="projects">Projects</section>
+          <p className="hero-copy">
+            Frontend-focused software engineer with 5+ years of experience
+            building production web applications in fintech environments. I
+            specialize in React, Angular, TypeScript, API integrations, and
+            polished user interfaces.
+          </p>
 
-        <section id="experience">Experience</section>
-
-        <section id="contact">Contact</section>
+          <div className="hero-actions">
+            <a className="btn btn-primary" href="#projects">
+              View Projects
+            </a>
+            <a className="btn btn-secondary" href="/resume.pdf">
+              View Resume
+            </a>
+          </div>
+        </section>
       </main>
     </>
   );
