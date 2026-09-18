@@ -4,6 +4,22 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "Project Horizon",
+    description:
+      "Full-stack climbing tracker for logging sessions, tracking projects, and reflecting on training progress. Includes user authentication, project and session management, image uploads, and responsive mobile-friendly workflows.",
+    tech: [
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "RxJS",
+      "REST API",
+    ],
+    liveUrl: "https://projecthorizon.app",
+    githubUrl: "https://github.com/jyandell83/project-horizon",
+  },
+  {
     title: "MLB Stats App",
     description:
       "Real-time baseball dashboard built with React and the MLB Stats API featuring live game updates, standings, player statistics, and responsive UI patterns.",
